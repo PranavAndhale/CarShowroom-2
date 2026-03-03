@@ -1,0 +1,17 @@
+# AutoElite Dealership Management System — Configuration Template
+# ─────────────────────────────────────────────────────────────────────────────
+# INSTRUCTIONS FOR NEW USERS:
+#   1. Copy this file and rename it to: application.properties
+#   2. Fill in your actual values below
+#   3. NEVER commit application.properties to Git — it is in .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Database Settings
+db.url=jdbc:mysql://localhost:3306/car_showroom
+db.user=root
+db.password=YOUR_MYSQL_PASSWORD_HERE
+
+# Application Settings
+app.name=AutoElite Management System
+app.version=1.0.0
+app.debug=true

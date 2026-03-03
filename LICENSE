@@ -1,0 +1,110 @@
+PROPRIETARY SOFTWARE LICENSE
+
+Copyright (c) 2026 Pranav Andhale. All Rights Reserved.
+
+================================================================================
+AUTOELITE DEALERSHIP MANAGEMENT SYSTEM — PROPRIETARY LICENSE
+================================================================================
+
+This software, "AutoElite Dealership Management System" (hereinafter referred
+to as "the Software"), and all associated source code, compiled bytecode,
+assets, documentation, design elements, and intellectual property contained
+herein, are the sole and exclusive property of Pranav Andhale
+(hereinafter referred to as "the Author").
+
+BY VIEWING, ACCESSING, CLONING, DOWNLOADING, OR OTHERWISE INTERACTING WITH
+THIS REPOSITORY OR ITS CONTENTS IN ANY WAY, YOU AGREE TO THE FULL TERMS OF
+THIS LICENSE.
+
+--------------------------------------------------------------------------------
+1. GRANT OF RIGHTS
+--------------------------------------------------------------------------------
+
+No rights, licenses, or permissions are granted by this License, either
+explicitly or implicitly, except as expressly stated herein.
+
+You are ONLY permitted to:
+  (a) View the source code and documentation for personal, non-commercial
+      educational and evaluation purposes.
+  (b) Run the Software on your own device for personal, non-commercial use.
+
+--------------------------------------------------------------------------------
+2. RESTRICTIONS — ALL OF THE FOLLOWING ARE STRICTLY PROHIBITED
+--------------------------------------------------------------------------------
+
+Without the express prior written consent of the Author, you MAY NOT:
+
+  (a) COPY or reproduce any portion of the source code, design, logic,
+      algorithms, or architecture, in whole or in part, by any means
+      including but not limited to manual transcription, copy-paste,
+      photography, or screen capture.
+
+  (b) MODIFY, adapt, translate, or create derivative works based upon the
+      Software or any portion thereof.
+
+  (c) DISTRIBUTE, sublicense, sell, rent, lease, lend, or otherwise transfer
+      the Software or any portion thereof to any third party.
+
+  (d) DECOMPILE, disassemble, reverse engineer, or attempt to derive the
+      source code from any compiled form of the Software.
+
+  (e) USE the Software or any portion of its code, design patterns,
+      algorithms, or architecture for any commercial purpose, including
+      building competing or similar products.
+
+  (f) PLAGIARISE or represent the Software or any component thereof as your
+      own original work in any academic, professional, or commercial context.
+
+  (g) REMOVE, alter, or obscure any copyright notices, proprietary legends,
+      or license statements present in the Software or its documentation.
+
+  (h) USE the AutoElite name, logo, branding, or any associated assets for
+      any purpose without prior written permission from the Author.
+
+--------------------------------------------------------------------------------
+3. INTELLECTUAL PROPERTY
+--------------------------------------------------------------------------------
+
+The Software, including but not limited to its source code, UI design,
+custom Java2D charts, AI logic, database architecture, and branding assets,
+constitutes original creative work protected under applicable copyright laws
+and international intellectual property treaties.
+
+All original contributions by the Author are protected under the Copyright Act
+and the Berne Convention for the Protection of Literary and Artistic Works.
+
+--------------------------------------------------------------------------------
+4. NO WARRANTY
+--------------------------------------------------------------------------------
+
+THE SOFTWARE IS PROVIDED "AS IS" FOR VIEWING PURPOSES ONLY, WITHOUT ANY
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NON-INFRINGEMENT. THE AUTHOR SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES,
+OR OTHER LIABILITY ARISING FROM OR IN CONNECTION WITH THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+5. ENFORCEMENT
+--------------------------------------------------------------------------------
+
+Any unauthorized use, copying, distribution, or reverse engineering of this
+Software constitutes a violation of this License and applicable copyright law
+and may result in civil and/or criminal penalties under the laws of the
+applicable jurisdiction.
+
+The Author reserves the right to pursue any and all legal remedies available
+under applicable law in the event of any breach of this License.
+
+--------------------------------------------------------------------------------
+6. CONTACT
+--------------------------------------------------------------------------------
+
+To request a commercial license, collaboration, or written permission for any
+use not expressly permitted above, contact the Author at:
+
+  GitHub:   https://github.com/yourusername
+  Email:    your@email.com
+
+================================================================================
+All Rights Reserved. Unauthorized use is strictly prohibited.
+================================================================================

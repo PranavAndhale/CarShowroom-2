@@ -1,0 +1,45 @@
+# ── Compiled Java bytecode (auto-generated, never commit these) ───────────────
+bin/
+*.class
+
+# ── Maven build output ────────────────────────────────────────────────────────
+target/
+
+# ── IntelliJ / IDE build output ───────────────────────────────────────────────
+out/
+
+# ── Backup files ──────────────────────────────────────────────────────────────
+*_Backup_*
+*Backup*.java
+
+# ── Sensitive configuration — NEVER commit real credentials ───────────────────
+application.properties
+# The .example file is safe and SHOULD be committed
+!application.properties.example
+
+# ── JavaFX / SDK library binaries (too large, not needed on GitHub) ───────────
+lib/
+src.zip
+sources.txt
+*.zip
+
+# ── IDE / Editor files ────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+
+# ── macOS system files ────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Logs & temp files ─────────────────────────────────────────────────────────
+*.log
+/tmp/
