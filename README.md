@@ -67,7 +67,7 @@ All charts are hand-drawn using `Graphics2D` and Bézier curves:
 
 ### Option 1: Maven (Recommended)
 ```bash
-git clone https://github.com/yourusername/autoelite-dealership.git
+git clone https://github.com/PranavAndhale/CarShowroom-2.git
 cd autoelite-dealership
 ```
 
@@ -108,4 +108,4 @@ This project is proprietary software. Viewing is permitted; copying, redistribut
 
 ---
 
-*Built with passion by Pranav Andhale*
+*Built with passion by [Pranav Andhale](https://github.com/PranavAndhale)*
