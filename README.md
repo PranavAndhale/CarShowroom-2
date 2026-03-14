@@ -1,14 +1,12 @@
 <div align="center">
 
-<br/>
-
 ```
- █████╗ ██╗   ██╗████████╗ ██████╗     ███████╗██╗     ██╗████████╗███████╗
-██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗    ██╔════╝██║     ██║╚══██╔══╝██╔════╝
-███████║██║   ██║   ██║   ██║   ██║    █████╗  ██║     ██║   ██║   █████╗  
-██╔══██║██║   ██║   ██║   ██║   ██║    ██╔══╝  ██║     ██║   ██║   ██╔══╝  
-██║  ██║╚██████╔╝   ██║   ╚██████╔╝    ███████╗███████╗██║   ██║   ███████╗
-╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝     ╚══════╝╚══════╝╚═╝   ╚═╝   ╚══════╝
+ █████╗ ██╗   ██╗████████╗ ██████╗ ███████╗██╗     ██╗████████╗███████╗
+██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗██╔════╝██║     ██║╚══██╔══╝██╔════╝
+███████║██║   ██║   ██║   ██║   ██║█████╗  ██║     ██║   ██║   █████╗
+██╔══██║██║   ██║   ██║   ██║   ██║██╔══╝  ██║     ██║   ██║   ██╔══╝
+██║  ██║╚██████╔╝   ██║   ╚██████╔╝███████╗███████╗██║   ██║   ███████╗
+╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝╚══════╝╚═╝   ╚═╝   ╚══════╝
 ```
 
 ### **AutoElite Dealership Management System**
@@ -31,18 +29,13 @@
 
 **AutoElite** is a professional, full-stack **Dealership Management System (DMS)** built entirely in Java 17. It replaces every spreadsheet and disconnected tool a car dealership uses with one unified, enterprise-grade desktop platform.
 
-From browsing a live inventory with an interactive **3D car configurator**, to processing a fully tracked sale, auto-generating a professional invoice, scheduling a test drive, and submitting a customer review — every dealership workflow is handled in one place.
+From processing a fully tracked sale and auto-generating a professional invoice, to scheduling a test drive, managing staff commissions, and predicting customer churn with a built-in AI engine — every dealership workflow is handled in one place.
 
 Designed with a clean **MVC architecture** and a custom, modern **dark-themed Swing UI**, AutoElite feels nothing like a typical Java desktop app.
 
 ---
 
 ## ✨ Feature Highlights
-
-### 🔮 Interactive 3D Car Configurator
-The standout feature of AutoElite. Before any purchase decision, customers can explore vehicles in immersive **real-time 3D** — rotating, zooming, and inspecting the car from every angle, directly inside the application. A companion web-based configurator is also available for browser use.
-
----
 
 ### 🏎️ Vehicle Inventory — Every Detail Tracked
 Each vehicle listing goes far beyond just make and model:
@@ -72,6 +65,20 @@ A real business-grade commission tracking system for dealership staff:
 - **Automatic commission calculation** triggered on each completed sale
 - **Paid / Unpaid ledger** — managers can see outstanding payouts at a glance and mark them settled
 - Full commission history per employee
+
+---
+
+### 🤖 Proprietary AI Engine
+Four purpose-built intelligence modules power the decision layer:
+
+| Module | Description |
+|---|---|
+| **AI Churn Predictor** | Scores every customer's churn risk using purchase history & behavioural signals |
+| **AI Sales Coach** | Analyses completed vs. cancelled deals and surfaces actionable coaching insights |
+| **Smart Car Recommender** | Matches customer profiles to the optimal vehicle from live inventory |
+| **Dynamic Pricing Engine** | Models demand elasticity alongside inventory depth to recommend optimal sell prices |
+
+> ℹ️ The algorithms powering these modules are proprietary and are not exposed in this repository.
 
 ---
 
@@ -127,6 +134,13 @@ Every sensitive action taken inside the system — logins, sales, modifications 
 
 ---
 
+### 🔮 3D Car Viewer *(Companion Feature)*
+A browser-based Sketchfab-powered 3D car viewer is bundled as a companion utility. It accepts car metadata (brand, model, year, fuel type) as URL parameters and launches in the user's default browser directly from the Inventory panel.
+
+> This is an optional companion tool — not part of the core dealership workflows.
+
+---
+
 ## 🏗️ Architecture
 
 ```
@@ -136,7 +150,7 @@ AutoElite/
 │   ├── models/           # OOP data models with inheritance hierarchy
 │   ├── ui/               # Modern Swing GUI — sidebar, panels, configurator
 │   └── utils/            # DB, security, session, config, audit utilities
-├── web-configurator/     # Browser-based 3D car configurator
+├── web-configurator/     # Browser-based 3D car viewer (companion)
 ├── application.properties.example
 ├── pom.xml
 └── run.sh
@@ -185,7 +199,7 @@ The application window launches automatically. On first run, the system auto-see
 | **H2** | 2.2.x | Zero-config in-memory fallback |
 | **Twilio SDK** | 9.x | SMS OTP for Two-Factor Authentication |
 | **JavaMail** | 1.6 | Email invoice delivery |
-| **Sketchfab** | Web API | 3D vehicle model viewer |
+| **Sketchfab** | Web API | 3D vehicle viewer (companion) |
 
 ---
 
