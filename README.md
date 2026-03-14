@@ -36,6 +36,17 @@ Designed with a clean **MVC architecture** and a custom, modern **dark-themed Sw
 
 ## ✨ Feature Highlights
 
+### 💎 Ultra-Premium User Interface
+AutoElite is designed to feel nothing like a typical Java desktop application:
+
+- **Cinematic Fullscreen Login** — edge-to-edge dark canvas with a centred glassmorphism card and the custom Apex "A" logo
+- **AnimatedModernSidebar** — 60fps hover-glows, active indicator bars, and noise-texture depth, all rendered with raw Java2D — zero UI libraries
+- **Custom Branded Identity** — original "Apex A" metallic + neon logo deployed across Login, Dashboard header, and Sidebar
+- **Live IST Clock** — second-accurate, pinned to `Asia/Kolkata`, always visible in the navigation bar
+- **Real-Time Search & Filtering** — instant, DB-free `TableRowSorter` filtering across every management panel
+
+---
+
 ### 🏎️ Vehicle Inventory — Every Detail Tracked
 Each vehicle listing goes far beyond just make and model:
 
@@ -54,6 +65,17 @@ End-to-end sale management with full cross-entity linking:
 - **Multiple payment method** support recorded per transaction
 - **Status lifecycle management** — from initiation through to completion
 - Real-time **revenue and units-sold KPIs** on the main dashboard
+
+---
+
+### 📊 Analytics & Data Visualization — Zero External Libraries
+All charts are hand-drawn using pure `Graphics2D` and Bézier curves — no charting dependencies whatsoever:
+
+- **Dual-line quarterly revenue trend** — current vs. previous year overlaid on the same canvas
+- **Category revenue bar charts** — per-segment breakdown with metallic gradient fills
+- **Commission & payroll summaries** — per-employee payout visuals for HR and Finance
+- **Top employee rankings** — performance leaderboard driven by completed sales
+- **Low-stock alerts** — inventory depth visualised with configurable threshold highlights
 
 ---
 
