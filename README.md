@@ -1,18 +1,16 @@
 <div align="center">
 
 ```
- █████╗ ██╗   ██╗████████╗ ██████╗ ███████╗██╗     ██╗████████╗███████╗
-██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗██╔════╝██║     ██║╚══██╔══╝██╔════╝
-███████║██║   ██║   ██║   ██║   ██║█████╗  ██║     ██║   ██║   █████╗
-██╔══██║██║   ██║   ██║   ██║   ██║██╔══╝  ██║     ██║   ██║   ██╔══╝
-██║  ██║╚██████╔╝   ██║   ╚██████╔╝███████╗███████╗██║   ██║   ███████╗
-╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝╚══════╝╚═╝   ╚═╝   ╚══════╝
+    _   _   _ _____ ___  _____ _     ___ _____ _____ 
+   / \ | | | |_   _/ _ \| ____| |   |_ _|_   _| ____|
+  / _ \| | | | | || | | |  _| | |    | |  | | |  _|  
+ / ___ \ |_| | | || |_| | |___| |___ | |  | | | |___ 
+/_/   \_\___/  |_| \___/|_____|_____|___| |_| |_____|
 ```
 
 ### **AutoElite Dealership Management System**
 *A complete enterprise dealership platform — built to handle every aspect of a modern car showroom operation from a single, beautifully designed Java desktop application.*
 
-<br/>
 
 [![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/projects/jdk/17/)
 [![Maven](https://img.shields.io/badge/Maven-3.9+-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)](https://maven.apache.org/)
