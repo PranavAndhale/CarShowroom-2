@@ -140,22 +140,73 @@ A browser-based Sketchfab-powered 3D car viewer is bundled as a companion utilit
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Project Structure
 
 ```
-AutoElite/
+CarShowroom-2/
 ├── src/
-│   ├── controllers/      # Business logic layer (8 controllers)
-│   ├── models/           # OOP data models with inheritance hierarchy
-│   ├── ui/               # Modern Swing GUI — sidebar, panels, configurator
-│   └── utils/            # DB, security, session, config, audit utilities
-├── web-configurator/     # Browser-based 3D car viewer (companion)
-├── application.properties.example
-├── pom.xml
-└── run.sh
+│   ├── controllers/
+│   │   ├── CarController.java          # Inventory CRUD & stock management
+│   │   ├── CustomerController.java     # Customer profile & history
+│   │   ├── EmployeeController.java     # Staff records & role management
+│   │   ├── SaleController.java         # Sales pipeline & invoice generation
+│   │   ├── CommissionController.java   # Commission calc & payout tracking
+│   │   ├── TestDriveController.java    # Appointment scheduling
+│   │   ├── ReviewController.java       # Customer review management
+│   │   └── DealershipController.java   # Dealership identity & branding
+│   ├── models/
+│   │   ├── Person.java                 # Base class (name, contact)
+│   │   ├── Employee.java               # Extends Person — role, salary
+│   │   ├── Manager.java                # Extends Employee — elevated access
+│   │   ├── Customer.java               # Extends Person — purchase history
+│   │   ├── Car.java                    # Full vehicle spec model
+│   │   ├── Sale.java                   # Transaction record
+│   │   ├── TestDrive.java              # Appointment model
+│   │   ├── Review.java                 # Star-rated review model
+│   │   └── Dealership.java             # Dealership profile model
+│   ├── ui/
+│   │   ├── CarShowroomApp.java         # Main application window & all panels
+│   │   ├── ModernSidebar.java          # Animated neon sidebar component
+│   │   └── CarConfiguratorEngine.java  # 3D viewer launcher (companion)
+│   ├── utils/
+│   │   ├── DatabaseManager.java        # MySQL + H2 fallback, all SQL queries
+│   │   ├── DataSeeder.java             # Demo data auto-seeder on first launch
+│   │   ├── SessionManager.java         # Login session & role state
+│   │   ├── AuditLogger.java            # Immutable tamper-evident audit trail
+│   │   ├── BackupScheduler.java        # Automated background DB backup
+│   │   ├── TwilioService.java          # SMS OTP delivery via Twilio
+│   │   ├── OtpService.java             # OTP generation & verification logic
+│   │   └── ConfigManager.java          # Reads application.properties
+│   └── resources/
+│       └── autoelite_logo.png          # Branded Apex "A" logo asset
+├── web-configurator/                   # Browser-based 3D car viewer (companion)
+├── application.properties.example      # Config template — copy & fill in
+├── pom.xml                             # Maven build & dependency definitions
+└── run.sh                              # One-command build & launch script
 ```
 
-**Design**: Clean **MVC** with OOP inheritance (`Person → Employee → Manager`, `Person → Customer`).
+**Design pattern**: Clean **MVC** with OOP inheritance — `Person → Employee → Manager` and `Person → Customer`.
+
+---
+
+## ⚙️ Configuration Reference
+
+Copy `application.properties.example` → `application.properties` and supply your values. This file is `.gitignore`-protected and never committed.
+
+| Key | Description |
+|-----|-------------|
+| `db.url` | JDBC connection string (e.g. `jdbc:mysql://localhost:3306/car_showroom`) |
+| `db.user` | MySQL username |
+| `db.password` | MySQL password |
+| `twilio.account_sid` | Twilio Account SID — for SMS 2FA |
+| `twilio.auth_token` | Twilio Auth Token |
+| `twilio.phone_number` | Twilio sender phone number |
+| `mail.host` | SMTP host (e.g. `smtp.gmail.com`) |
+| `mail.port` | SMTP port (e.g. `587`) |
+| `mail.user` | Email address for outbound mail |
+| `mail.password` | Email / app password |
+
+> **No MySQL?** Leave `db.*` as-is — the app automatically falls back to H2 in-memory with demo data.
 
 ---
 
