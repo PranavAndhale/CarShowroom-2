@@ -1,111 +1,168 @@
-# AutoElite Dealership Management System
+<div align="center">
 
-![Java Version](https://img.shields.io/badge/Java-17%2B-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-3.8%2B-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
-![Twilio](https://img.shields.io/badge/Twilio-Integrated-F22F46?style=for-the-badge&logo=twilio&logoColor=white)
-![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)
+<br/>
 
-> **AutoElite** is a production-ready, ultra-premium Desktop Application for managing every aspect of a modern car dealership — built entirely in Java (Swing/Java2D) with zero external UI frameworks.
+```
+ ██████╗ █████╗ ██████╗      ███████╗██╗  ██╗ ██████╗ ██╗    ██╗██████╗  ██████╗  ██████╗ ███╗   ███╗
+██╔════╝██╔══██╗██╔══██╗     ██╔════╝██║  ██║██╔═══██╗██║    ██║██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║
+██║     ███████║██████╔╝     ███████╗███████║██║   ██║██║ █╗ ██║██████╔╝██║   ██║██║   ██║██╔████╔██║
+██║     ██╔══██║██╔══██╗     ╚════██║██╔══██║██║   ██║██║███╗██║██╔══██╗██║   ██║██║   ██║██║╚██╔╝██║
+╚██████╗██║  ██║██║  ██║     ███████║██║  ██║╚██████╔╝╚███╔███╔╝██║  ██║╚██████╔╝╚██████╔╝██║ ╚═╝ ██║
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝     ╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝     ╚═╝
+```
+
+### **AutoElite Dealership Management System**
+*A full-featured enterprise dealership platform — inventory, sales, customer management, invoicing and 2FA security, all in one Java desktop application.*
+
+<br/>
+
+[![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/projects/jdk/17/)
+[![Maven](https://img.shields.io/badge/Maven-3.9+-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)](https://maven.apache.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Twilio](https://img.shields.io/badge/Twilio-2FA%20SMS-F22F46?style=for-the-badge&logo=twilio&logoColor=white)](https://www.twilio.com/)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
+
+</div>
 
 ---
 
-## ✨ Highlights
+## 🚗 What is AutoElite?
 
-| Area | What's Inside |
-|---|---|
-| 🎨 **UI & Branding** | Cinematic fullscreen login, custom Apex "A" logo, animated neon sidebar, real-time IST clock |
-| 📊 **Analytics** | Custom Java2D Bézier charts — quarterly trends, category splits, payroll insights |
-| 🤖 **AI Engine** | Sales Coach, Predictive Churn scoring, AI-powered Smart Car Recommender |
-| 🛡️ **Security** | 2FA via Twilio SMS, RBAC, SHA password hashing, Immutable Audit Log |
-| ⚡ **Search** | Real-time table filtering across Inventory, Customers, and Sales |
-| 📧 **Communication** | Email & SMS notifications, test drive booking confirmations |
-| 🗄️ **Database** | MySQL primary + H2 in-memory auto-fallback for zero-config testing |
+**AutoElite** is a professional **Dealership Management System (DMS)** built entirely in Java 17. It gives car dealerships a single, powerful desktop application to manage their entire operation — from tracking inventory and processing sales transactions to maintaining customer records and generating polished PDF invoices.
+
+It's engineered with a clean **MVC (Model-View-Controller)** architecture, making it maintainable, extensible, and production-ready.
 
 ---
 
-## 🚀 Key Features
+## ✨ Key Features
 
-### 💎 Ultra-Premium User Interface
-- **Cinematic Fullscreen Login** — edge-to-edge dark canvas with a centered glassmorphism card and the custom Apex "A" logo
-- **AnimatedModernSidebar** — 60fps hover-glows, active indicator bars, and noise-texture depth, all rendered with raw Java2D
-- **Custom Branded Identity** — original "Apex A" metallic + neon logo deployed across Login, Dashboard header, and Sidebar
-- **Live IST Clock** — ticks every second, pinned to `Asia/Kolkata` in the top navigation bar
-- **Real-Time Search & Filtering** — instant, DB-free `TableRowSorter` filtering across all major panels
+### 🏎️ Inventory Management
+- Add, update, and remove vehicle listings with full spec details (make, model, year, VIN, price)
+- Real-time stock tracking — know exactly what's on the lot
+- Filter and search inventory by brand, price range, or availability status
 
-### 📊 Advanced Data Visualization — Zero External Libraries
-All charts are hand-drawn using `Graphics2D` and Bézier curves:
-- Dual-line quarterly revenue trend (current vs. previous year)
-- Category revenue bar charts with metallic gradients
-- Low-stock highlights, top employee rankings, payroll summaries
+### 👥 Customer Relationship Management (CRM)
+- Store and manage complete customer profiles (contact details, purchase history)
+- Link customers to their vehicle purchases for full traceability
+- Customer search and quick lookup by name, phone, or ID
 
-### 🛡️ Enterprise-Grade Backend Logic
-- **Role-Based Access Control (RBAC)** — Admin, Sales, Finance, HR roles with per-panel permission guards
-- **Two-Factor Authentication (2FA)** — Twilio SMS OTP on every admin login
-- **AI Predictive Churn** — algorithmically scores customers at risk of leaving based on purchase history
-- **AI Sales Coach** — analyses completed and cancelled sales to provide actionable coaching insights
-- **Automated DB Backup** — background scheduler silently exports MySQL snapshots
-- **Immutable Audit Log** — every create/update/delete action tracked with user ID and timestamp
+### 💰 Sales & Transactions
+- Process complete end-to-end vehicle sale transactions
+- Automatic inventory deduction on sale completion
+- Sales history and transaction audit trail
+
+### 🧾 Invoice Generation
+- Generate professional, formatted PDF invoices on every sale
+- Invoices emailed directly to the customer via **JavaMail (SMTP)** integration
+- Itemized billing with tax and total calculations
+
+### 🔐 Security — Two-Factor Authentication (2FA)
+- Staff login secured with username + password **plus** an SMS OTP via **Twilio**
+- Prevents unauthorized access to sensitive dealership data
+- Session management with secure logout
+
+### 🗄️ Database
+- **MySQL** as the primary production database
+- **H2 (in-memory)** as an automatic fallback for development/testing — zero setup required
+- Clean schema with normalized tables for vehicles, customers, sales, and users
+
+---
+
+## 🏗️ Architecture
+
+```
+AutoElite/
+├── src/
+│   ├── controllers/        # Business logic — bridges UI and models
+│   ├── models/             # Java POJOs: Vehicle, Customer, Sale, User
+│   ├── ui/                 # Swing-based GUI panels and forms
+│   ├── utils/              # DB connection, email sender, OTP generator
+│   └── resources/          # Config files, assets
+├── web-configurator/       # Web-based setup wizard for first-time config
+├── application.properties.example  # Config template (copy → application.properties)
+├── pom.xml                 # Maven build file
+└── run.sh                  # One-command build + launch script
+```
+
+**Pattern**: MVC — `controllers` handle all logic, `models` define data structures, `ui` renders the interface, `utils` wraps external services.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Java 17+
+- Maven 3.9+
+- MySQL 8.0 (or use the built-in H2 fallback)
+- A Twilio account (for 2FA SMS)
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/PranavAndhale/CarShowroom-2.git
+cd CarShowroom-2
+```
+
+### 2. Configure the application
+```bash
+# Copy the example config
+cp application.properties.example application.properties
+
+# Edit application.properties with your actual values:
+#   db.url      → your MySQL JDBC URL
+#   db.user     → MySQL username
+#   db.password → MySQL password
+```
+
+> **Note**: `application.properties` is already in `.gitignore` — your credentials are never committed.
+
+### 3. Build & Run (one command)
+```bash
+./run.sh
+```
+
+Or manually:
+```bash
+mvn clean package -q
+java -jar target/car-showroom-pro-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+```
+
+The application window will launch automatically.
+
+---
+
+## ⚙️ Configuration Reference
+
+| Property | Description | Example |
+|----------|-------------|---------|
+| `db.url` | MySQL JDBC connection string | `jdbc:mysql://localhost:3306/car_showroom` |
+| `db.user` | Database username | `root` |
+| `db.password` | Database password | `yourpassword` |
+| `app.debug` | Enable verbose logging | `true` / `false` |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Language | Java 17+ |
-| UI | Java Swing + Java2D (no external UI libs) |
-| Database | MySQL 8.0+ (H2 in-memory fallback) |
-| Build | Apache Maven |
-| SMS / OTP | Twilio SDK |
-| Email | JavaMail API |
-| Config | Externalized `application.properties` |
-
----
-
-## ⚙️ Setup & Installation
-
-### Option 1: Maven (Recommended)
-```bash
-git clone https://github.com/PranavAndhale/CarShowroom-2.git
-cd autoelite-dealership
-```
-
-Edit `application.properties` with your MySQL credentials:
-```properties
-db.url=jdbc:mysql://localhost:3306/car_showroom
-db.user=root
-db.password=yourpassword
-```
-
-Build and run:
-```bash
-mvn clean package
-java -jar target/car-showroom-pro-1.0.0-SNAPSHOT-jar-with-dependencies.jar
-```
-
-> **No MySQL?** Leave the config as-is — the app automatically falls back to an H2 in-memory database so you can explore the full UI instantly.
-
-### Option 2: IDE (VS Code / IntelliJ / Eclipse)
-1. Open the project folder
-2. Ensure Java 17+ is configured
-3. Run `src/ui/CarShowroomApp.java`
-
----
-
-## � Security Practices
-
-- **Externalized Config** — DB credentials live in `application.properties`, never hardcoded
-- **Password Hashing** — user passwords processed via SHA `MessageDigest` before storage
-- **Safe Table Indexing** — all UI row indices converted to DB model IDs before any mutation
-- **Audit Trail** — tamper-evident log of every admin action with timestamp and user context
+| Technology | Role |
+|------------|------|
+| **Java 17** | Core application language |
+| **Swing** | Desktop GUI framework |
+| **Maven** | Build + dependency management |
+| **MySQL 8.0** | Primary production database |
+| **H2** | In-memory DB fallback (dev/test) |
+| **Twilio SDK** | SMS-based Two-Factor Authentication |
+| **JavaMail** | Email invoice delivery via SMTP |
 
 ---
 
 ## 📄 License
 
-This project is proprietary software. Viewing is permitted; copying, redistribution, decompilation, or commercial use are strictly prohibited. See [LICENSE](LICENSE) for full terms.
+This project is licensed under a **Proprietary License** — see [LICENSE](LICENSE) for details.
 
 ---
 
-*Built with passion by [Pranav Andhale](https://github.com/PranavAndhale)*
+<div align="center">
+
+Built with ☕ by [Pranav Andhale](https://github.com/PranavAndhale)
+
+</div>
